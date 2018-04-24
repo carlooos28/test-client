@@ -1,9 +1,13 @@
 // Dependencies
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 
 // Containers 
 import Home from './containers/Home';
+
+// Store
+import store from './state/store';
 
 /* react-dom needs React global variable in order to work on async funcion */
 /* 
@@ -15,7 +19,9 @@ const reactRender = ReactDOM.render;
 
 // The main Component where the app is connected to the global state
 let App = (
-    <Home />
+    <Provider store={store}>
+        <Home />
+    </Provider>    
 );
 
 export function render() {

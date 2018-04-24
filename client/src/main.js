@@ -1,4 +1,4 @@
-import { render } from "./App";
+import { render } from './App';
 
 // Entrypoint
 // Ready, Steady...Go!
