@@ -17,18 +17,19 @@ class Home extends Component {
 	}	
 
 	render() { 
-		let hotels   	= this.props.hotels,
-		    badResponse = typeof hotels === 'string';
-
+		let hotels = this.props.hotels;
+		    
 		return (
 			<Layout>
 				<Header />
-					<Content />
+					<Content hotels={hotels} />
+
 			</Layout>
 
 		)
 	}
 }
+
 
 // Passing the hotels data from the global state to the container
 const mapState = ({hotels}) => ({hotels});

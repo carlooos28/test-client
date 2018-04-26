@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 import { actionNames } from './actions';
 
-const hotels = (state = {}, action) => {
+const hotels = (state = [], action) => {
   let bodyResponse;
   
   switch(action.type) {
