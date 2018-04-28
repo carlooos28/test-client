@@ -2,7 +2,7 @@ const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const CopyWebpackPluginConfig = new CopyWebpackPlugin([
-  {from: 'src/Frontend/assets/images'}
+  {from: 'src/assets'}
 ]);
 
 module.exports = {
