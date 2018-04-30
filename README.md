@@ -9,9 +9,10 @@ Este es un test para Almundo, el objetivo fue tomar una estructura Json, generar
 - NPM or Yarn
 
 ### Quick start
-- Clonar este repositorio
-- Ingresar a la carpeta del repositorio 
-- Ingresar a la carpeta /server/ tipear `$ npm start`
+- Clonar este repositorio desde la terminal 
+- Ir a la carpeta del repositorio 
+- Ir a la carpeta /server/ tipear `$ npm start`
+- Iniciar sesión desde otra terminal 
 - Ingresar a la carpeta /client/ tipear `$ npm start`
 - Ir a  `http://localhost:9000`
 - Esto es todo 
