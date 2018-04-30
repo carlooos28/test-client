@@ -18,18 +18,29 @@ app.get('/api/hotels', (req, res) => {
   })
 });
 
-// localhost:3008/api/library/book?id=1
+// localhost:3008/api/hotel?name=nameHotel
 app.get('/api/hotel', (req, res, next) => {
   const {
     query: {
-      id = 0
+      name = "",
+      stars = 0
     }
   } = req;
 
-  const selectedHotel = hotels.filter(hotel => hotel.id === id);
+
+let selectedHotel = "";
+
+    if(name){
+      selectedHotel = hotels.filter(hotel => hotel.name === name);
+    }
+      
+    if(stars){
+      selectedHotel = hotels.filter(hotel => hotel.stars === Number(stars));
+    }
+  
 
   res.json({
-    response: selectedHotel
+    hotels: selectedHotel
   });
 });
 

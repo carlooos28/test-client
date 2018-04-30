@@ -2,9 +2,6 @@
 import { Component } from 'react';
 import { Row, Col, Button } from 'reactstrap';
 
-// Components
-import Stars from './stars';
-
 // Css
 import './styles.css';
 

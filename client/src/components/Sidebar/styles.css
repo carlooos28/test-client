@@ -1,12 +1,12 @@
 .Sidebar {
-	height: 400px;
+	
 }
 
 .Sidebar > div {
 	margin-bottom: 6px;
 }
 
-.Sidebar > div:first-child {
+.Filters {
 	font-weight: bold;
     padding-left: 16px;
     padding-top: 10px;

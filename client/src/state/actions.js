@@ -4,14 +4,32 @@ export const actionNames = {
   FETCH_LOADING        : "FETCH_LOADING",
 };
 
-const ENDPOINT = "http://localhost:3008/api/hotels";
+export function fetchHotels(param) { 
+    let attribute = "",
+        endpoint  = "http://localhost:3008/api",
+        resource  = "hotel";
 
-export function fetchHotels() {
+    if (param.type === "hotels") {
+        resource  = "hotels";
+    }
+
+    if (param.type === "name") {
+        attribute = "name";
+    }
+
+    if (param.type === "stars") {
+        attribute = "stars";
+    }
+
+    if (param.data === 6) {
+        resource  = "hotels";
+    }
+
   return async (dispatch) => {
     dispatch({type: actionNames.FETCH_LOADING});
     
     try {
-      let response = await fetch(ENDPOINT);
+      let response = await fetch(`${endpoint}/${resource}?${attribute}=${param.data}`);
       let data = await response.json();
 
       dispatch({

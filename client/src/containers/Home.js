@@ -13,7 +13,7 @@ import { fetchHotels } from '../state/actions';
 class Home extends Component {
 	componentWillMount() {
 		// get hotels Api
-		this.props.dispatch(fetchHotels());
+		this.props.dispatch(fetchHotels({type: "hotels"}));
 	}	
 
 	render() { 
@@ -22,8 +22,7 @@ class Home extends Component {
 		return (
 			<Layout>
 				<Header />
-					<Content hotels={hotels} />
-
+					<Content hotels={hotels} search={this.props} />
 			</Layout>
 
 		)

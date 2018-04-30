@@ -18,15 +18,18 @@ class Content extends Component {
       <div className="Content">
         <Row> 
             <Col lg="3"> 
-                <Sidebar />        
+                <div className="Filter col-12 d-block d-sm-none Hotel-title">
+                    <label>Filtrar</label>
+                </div>
+                <Sidebar search={this.props.search} />        
             </Col>
-            <Col lg="9"> 
+            <Col lg="9">         
             {
                 hotels.map((hotel) => {
                     return (
                             <HotelInformation 
                                 key={hotel.id} 
-                                {...hotel} 
+                                {...hotel}                                 
                             />
                            )
                 })

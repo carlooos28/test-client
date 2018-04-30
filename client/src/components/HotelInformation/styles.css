@@ -29,8 +29,10 @@ div > .Amenities {
 
 .Price-description {
 	border-left: 1px dashed black;
-    padding: 40px;
     text-align: center;	
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;    
 }
 
 .Price-description > div > h6{
@@ -67,4 +69,47 @@ div > .Amenities {
 .Btn-hotel:hover {
 	background-color: #FFFFFF;
 	color: #15427d;
+}
+
+
+@media (max-width: 575.98px) { 
+	.Hotel-information > div {
+	    padding: 2px;
+	    padding-top: 4px;
+	    text-align: center;
+	    
+	}
+
+	.Hotel-information > div:nth-child(2) {
+	    text-align: left;
+	    margin-left: 8px;
+	    margin-top: 4px;
+	    
+	}
+	
+	.Hotel-information > div > div:nth-child(3), .Star {
+    	margin-top: 8px;
+	    
+	}
+
+	.Price-description {
+	    margin-top: 26px;
+	    margin-bottom: 30px;
+	    border-top: 1px dashed black;
+	    border-left: 0px;
+	}
+	
+	.Price-description > div > h6{
+		margin-top: 16px;
+	}
+
+	.Price {
+		display: block;
+	}
+	
+	.Price-description > div:nth-child(3) > button{
+		width: 100%;
+	}
+	
+
 }

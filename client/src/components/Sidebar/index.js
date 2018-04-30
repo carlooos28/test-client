@@ -11,12 +11,12 @@ import './styles.css';
 class Sidebar extends Component {
   render() {
     return (
-	    <div className="Sidebar">
-	    	<div>
+	    <div className="Sidebar d-none d-sm-block">
+	    	<div className="Filters">
 	    		<label>Filtros</label>
 	    	</div>	
-	    	<Search />
-	    	<Stars />
+	    	<Search search={this.props.search} />
+	    	<Stars search={this.props.search} />
 	    </div>
     );
   }
