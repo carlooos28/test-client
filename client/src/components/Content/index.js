@@ -1,9 +1,10 @@
 // Dependecies
 import { Component } from 'react';
+import { Row, Col } from 'reactstrap';
 
 // Components
 import Sidebar from '../Sidebar';
-import InformationHotel from '../InformationHotel';
+import HotelInformation from '../HotelInformation';
 
 // Css
 import './styles.css';
@@ -15,23 +16,23 @@ class Content extends Component {
 
     return (
       <div className="Content">
-        <div className="row"> 
-            <div className="col-3"> 
+        <Row> 
+            <Col lg="3"> 
                 <Sidebar />        
-            </div>
-            <div className="col-9">                
+            </Col>
+            <Col lg="9"> 
             {
                 hotels.map((hotel) => {
                     return (
-                            <InformationHotel 
+                            <HotelInformation 
                                 key={hotel.id} 
                                 {...hotel} 
                             />
                            )
                 })
             }                
-            </div>      
-        </div>      
+            </Col>      
+        </Row>       
       </div>
     );
   }

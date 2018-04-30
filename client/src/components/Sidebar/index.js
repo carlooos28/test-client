@@ -11,8 +11,10 @@ import './styles.css';
 class Sidebar extends Component {
   render() {
     return (
-	    <div className="Sidebar col">
-	    	<h4 className="Filters">Filtros</h4>
+	    <div className="Sidebar">
+	    	<div>
+	    		<label>Filtros</label>
+	    	</div>	
 	    	<Search />
 	    	<Stars />
 	    </div>
