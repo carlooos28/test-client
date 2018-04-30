@@ -8,6 +8,7 @@
     "build": "webpack",
     "build:local": "webpack --env.NODE_ENV=local",
     "build:prod": "webpack -p --env.NODE_ENV=production"
+    "start": "npm install && npm run build:dev",
   },
   "keywords": [
     "Almundo"

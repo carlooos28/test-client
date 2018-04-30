@@ -4,7 +4,7 @@
   "description": "Test Almundo Frontend",
   "main": "webpack.config.js",
   "scripts": {
-    "start": "babel-node src/index"
+    "start": "npm install &&  babel-node src/index"
   },
   "keywords": [
     "Almundo"
