@@ -4,7 +4,11 @@
   "description": "Test Almundo Frontend",
   "main": "webpack.config.js",
   "scripts": {
-    "start": "npm install &&  babel-node src/index"
+    "start": "npm install && babel-node src/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carlooos28/prueba-almundo.git"
   },
   "keywords": [
     "Almundo"

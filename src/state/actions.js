@@ -6,7 +6,7 @@ export const actionNames = {
 
 export function fetchHotels(param) { 
     let attribute = "",
-        endpoint  = "http://localhost:3008/api",
+        endpoint  = "http://pure-dawn-30271.herokuapp.com/api",
         resource  = "hotel";
 
     if (param.type === "hotels") {
