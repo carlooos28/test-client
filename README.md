@@ -2,8 +2,6 @@
 
 Este es un test para Almundo, el objetivo fue tomar una estructura Json, generar un Api Rest con recursos básicos, en donde estos recursos se consumen por medio de un cliente React.js .
 
-[Click here to see the demo]()
-
 ### Global dependencies
 - Node.js v8.*
 - NPM or Yarn
